@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="number" name="Tiền tệ" id="ab">Amount<br>
+    <select name="Tiền gốc" id="bc">
+        <option value="23000">Việt Nam Đồng</option>
+        <option value="1">Đô-la Mỹ</option>
+        <option value="220">JPY</option>
+    </select><br>
+    <select name="Tiền đổi sang" id="cd">
+        <option value="23000">Việt Nam Đồng</option>
+        <option value="1">Đô-la Mỹ</option>
+        <option value="220">JPY</option>
+    </select><br>
+    <button type="button" onclick="
+    let money = +ab.value ;
+    let to = +bc.value ;
+    let from = +cd.value
+    let cg= money * from/to;
+    alert(cg)">Doi tien</button>
+</form>
+</body>
+</html>
